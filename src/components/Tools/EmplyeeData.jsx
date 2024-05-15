@@ -29,11 +29,15 @@ const EmplyeeData = () => {
     }
 
     return (
-        <div>
+        <div className="m-10">
             <Button variant="contained" onClick={handleAddButtonClick}>Add Employee</Button>
             {employees.length > 0 ? (
                 <TableContainer component={Paper} className="mt-6 border-2 border-blue-950">
-                    <h2 className=" text-xl font-bold bg-blue-400 py-4">Employee Data</h2>
+                    <div className="bg-blue-400 py-4">
+                        <p className="text-white text-xl text-center font-extrabold">
+                            Employee Data
+                        </p>
+                    </div>
                     <Table aria-label="Employee Data" >
                         <TableHead>
                             <TableRow>
